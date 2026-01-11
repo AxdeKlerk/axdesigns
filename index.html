@@ -35,145 +35,227 @@
         content="Choose a website package and get online fast. Fixed pricing, no consultations, built for local businesses." />
   <meta name="twitter:image"
         content="https://axdesigns.co.uk/og-image.jpg" />
+    
+    <title>
+        AxDesigns | Fixed-Price Websites for Local Businesses in North Wales
+    </title>
+
+    <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/style/style.css"/>
 
 </head>
 <header>
+
+<section id="navigation">
     <!-- Logo + primary navigation -->
-     <h1>axdesigns</h1>
-       <nav>
-            <ul>
-                <li><p>
-                    <a href="#packages">Packages</a>    
-                    </p>
-                </li>
-                <li>
-                    <p>
-                       <a href="#how-it-works">How It Works</a> 
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <a href="#final-cta">Order</a>
-                    </p>
-                </li>
-            </ul>
-        </nav>
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container">
+                <!-- Top bar -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/style/red-logo.png" alt="Ax Designs logo" height="36">
+                <strong class="brand">
+                    /*axdesigns*/
+                </strong>
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-md-auto gap-2 align-items-end">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#how-it-works">How it works</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#final-cta">Order</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
 </header>
 
 <main>
 
     <!-- Headline, subheading, primary CTA -->
-    <section id="hero">
-      <h2>Get Your Business Online — Fast. Fixed Price. No Fuss.</h2>
-
-        <p>
-            Professionally built websites for local businesses in North Wales.
-            Choose a package, place your order, and we deliver.
-        </p>
-
-        <a href="#packages">Choose a Package</a>  
+    <section id="hero" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Get Your Business Online Fast. Fixed Price. No Fuss.</h2>
+                        <p>
+                            Professionally built websites for local businesses in North Wales.
+                            Choose a package, place your order, and we deliver.
+                        </p>
+                    <a href="#packages">Choose a Package</a> 
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Starter / Business / Store cards -->
-    <section id="packages">
-        <h2>Website Packages</h2>
+    <section id="packages" class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <h2 class="fw-bold">Website Packages</h2>
+                <div class="col-12 col-md-4">
+                <article class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title h5 semibold">
+                            <h3>
+                                Starter Website<br> £249
+                            </h3>
+                            <p>A simple, professional site to establish your online presence.</p>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>1-3 pages</li>
+                                    <li>Mobile-friendly design</li>
+                                    <li>Contact form</li>
+                                    <li>Basic SEO setup</li>
+                                    <li>Delivery in 5 working days</li>
+                                </ul>
+                            <div class="mt-auto">
+                                <a href="#" class="btn btn-outline-primary w-100">Order Starter Site</a>
+                            </div>
+                        </div>
+                    </div>   
+                </article>
+                </div>
 
-        <article>
-            <h3>Starter Website — £249</h3>
-            <p>A simple, professional site to establish your online presence.</p>
-                <ul>
-                    <li>1-3 pages</li>
-                    <li>Mobile-friendly design</li>
-                    <li>Contact form</li>
-                    <li>Basic SEO setup</li>
-                    <li>Delivery in 5 working days</li>
-                </ul>
-            <p>
-                <a href="#">Order Starter Site</a>
-            </p>
-        </article>
+                <div class="col-12 col-md-4">
+                <article class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title h5 semibold">
+                            <h3>
+                                Business Website<br> £349
+                            </h3>
+                            <p>A complete site for growing local businesses.</p>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>5 pages</li>
+                                    <li>Mobile-friendly design</li>
+                                    <li>Contact form</li>
+                                    <li>Google Maps embed</li>
+                                    <li>Social media links</li>
+                                    <li>Basic SEO</li>
+                                    <li>Delivery in 7 working days</li>
+                                </ul>
+                            <div class="mt-auto">
+                                <a href="#" class="btn btn-outline-primary w-100">Order Business Site</a>
+                            </div>
+                        </div>
+                    </div>   
+                </article>
+                </div>
 
-        <article>
-            <h3>Business Website — £349</h3>
-                <p>A complete site for growing local businesses.</p>
-                    <ul>
-                        <li>5 pages</li>
-                        <li>Mobile-friendly design</li>
-                        <li>Contact form</li>
-                        <li>Google Maps embed</li>
-                        <li>Social media links</li>
-                        <li>Basic SEO</li>
-                        <li>Delivery in 7 working days</li>
-                    </ul>
-                    <p>
-                        <a href="#">Order Business Site</a>
-                    </p>
-        </article>
-
-        <article>
-            <h3>Online Store — £499</h3>
-                <p>Sell products online with a ready-to-use ecommerce site.</p>
-                    <ul>
-                        <li>Up to 10 products</li>
-                        <li>Secure payment setup</li>
-                        <li>Mobile-friendly design</li>
-                        <li>Basic SEO</li>
-                        <li>Delivery in 10 working days</li>
-                    </ul>
-                    <p>
-                        <a href="#">Order Online Store</a>
-                    </p>
-        </article>
+                <div class="col-12 col-md-4">
+                <article class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="card-title h5 semibold">
+                            <h3>
+                                Online Store<br> £499
+                            </h3>
+                            <p>Sell products online with a ready-to-use ecommerce site.</p>
+                                <ul  class="list-unstyled mt-3 mb-4">
+                                    <li>Up to 10 products</li>
+                                    <li>Secure payment setup</li>
+                                    <li>Mobile-friendly design</li>
+                                    <li>Basic SEO</li>
+                                    <li>Delivery in 10 working days</li>
+                                </ul>
+                            <div class="mt-auto">
+                                <a href="#" class="btn btn-outline-primary w-100">Order Online Store</a>
+                            </div>
+                        </div>
+                    </div>   
+                </article>
+                </div>                    
+            </div>
+        </div>
     </section>
 
     <!-- How It Works -->
-        <section id="how-it-works">
-            <h2>How It Works</h2>
-
-                <ol>
-                    <li>Choose a package</li>
-                    <li>Fill out the order form</li>
-                    <li>We build your site</li>
-                    <li>Your site is delivered</li>
-                </ol>
-
-                <p>
-                    No consultations. No revision loops. If it doesn't fit the form,
-                    it's not the right product.
-                </p>
+        <section id="how-it-works" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">             
+                        <h2 class="fw-bold">How It Works</h2>
+                            <ol  class="list-unstyled mt-3 mb-4">
+                                <li>Choose a package</li>
+                                <li>Fill out the order form</li>
+                                <li>We build your site</li>
+                                <li>Your site is delivered</li>
+                            </ol>
+                        <p>
+                            No consultations. No revision loops. If it doesn't fit the form,
+                            it's not the right product.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
     <!-- Values -->
-        <section id="values">
-            <h2>What You Can Expect</h2>
-
-            <ul>
-                <li><strong>Local:</strong> Built for real local businesses.</li>
-                <li><strong>Simple:</strong> Fixed scope, fixed pricing.</li>
-                <li><strong>Reliable:</strong> Clear timelines and predictable delivery.</li>
-            </ul>
-
+        <section id="values" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col"> 
+                        <h2 class="fw-bold">What You Can Expect</h2>
+                        <ul>
+                            <li><strong>Local:</strong> Built for real local businesses.</li>
+                            <li><strong>Simple:</strong> Fixed scope, fixed pricing.</li>
+                            <li><strong>Reliable:</strong> Clear timelines and predictable delivery.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
     <!-- Choose your package -->
-        <section id="final-cta">
-            <h2>Choose Your Website. We'll Handle the Rest.</h2>
-                <p>
-                   <a href="#packages">View Packages</a> 
-                </p>
-                <p>Clear scope. Fixed delivery. No ongoing support.</p>
+        <section id="final-cta" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">            
+                        <h2 class="fw-bold">Choose Your Website. We'll Handle the Rest.</h2>
+                        <p>
+                            <a href="#packages">View Packages</a> 
+                        </p>
+                        <p>Clear scope. Fixed delivery. No ongoing support.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
 </main>
 
 <!-- Footer links + micro-copy -->
-<footer>
-    <p>
-        Order support only. We do not offer consultations or custom requests.
-    </p>
-    <p>
-        &copy; 2024 /*axesigns*/ All rights reserved
-</footer>
+    <footer id="footer">
+        <div class="container">
+            <div class="row w-100">
+                <div class="col"> 
+                    <p class="text-center">
+                        Order support only. We do not offer consultations or custom requests.
+                    </p>
+                    <p class="text-center">
+                        &copy; 2024 /*axesigns*/ All rights reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Bootstrap JS Bundle -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>
