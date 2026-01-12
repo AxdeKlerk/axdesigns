@@ -1,0 +1,157 @@
+
+
+/* Global Styles */
+body {
+    background-color: var(--color-grey);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+:root {
+    --color-grey: #6c6c6c;
+    --color-light: #f5f5f5;
+    --color-dark-grey: #555555;
+    --color-red: #a40000;
+    --color-mid-red: #860000;
+    --color-black: #000000;
+    --color-mid-black: #290000;
+    --color-black-var: #1b1b1b;
+}
+h1 {
+    color: var(--color-black);
+}
+
+h2 {
+}
+h3 {
+
+}
+
+
+/* Sections */
+
+/* Navbar Section */
+.navbar > .container-fluid {
+    padding-inline: 1rem;
+    background: hsla(0, 0%, 0%, 1);
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    background: -moz-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    background: -webkit-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#C00000", GradientType=1 );
+}
+.navbar {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1440px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 56px;
+}
+/* Brand */
+.navbar-brand .brand {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--color-black);
+}
+/* Links */
+.navbar-nav .nav-link {
+    color: var(--color-light);
+    margin-right: 1rem;
+}
+.navbar-nav a:hover {
+    color: var(--color-red);
+}
+
+/* --- Navbar Toggler: Hamburger → X --- */
+.navbar-toggler {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.navbar-toggler-icon {
+    width: 24px;
+    height: 24px;
+}
+.navbar-toggler[aria-expanded="true"] {
+    display: none;
+}
+
+/* Hero Section */
+#hero {
+
+}
+
+/* Packages Section */
+.card-body .card-title h2 {
+    color: var(--color-black-var) !important;
+}
+.card-body {
+    background-color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+}
+
+/* How It Works Section */
+#how-it-works {
+    background: hsla(0, 0%, 0%, 1);
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    background: -moz-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    /*background: -webkit-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#C00000", GradientType=1 );
+    */color: var(--color-light);
+    padding-left: 1rem;
+}
+
+#how-it-works >.p-text {
+    padding-right: 2rem;
+    padding-left: 0;
+  }
+
+/* Choose Your Package Section */
+#final-cta > .container {
+    background-color: var(--color-dark-grey);
+}
+#final-cta > .container h2 {
+    color: var(--color-black-var);
+}
+
+/* Button Styles */
+.navbar-toggler {
+    border-color: var(--color-light);
+    color: var(--color-light);
+}
+.navbar-toggler-icon {
+    filter: invert(1);
+    color: var(--color-light);
+}
+.btn-outline-primary {
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+    color: var(--color-light);
+    border: 2px solid;
+}
+.btn-outline-primary:hover {
+    background-color: var(--color--light);
+    border-color: var(--color-red);
+    color: var(--color-black);
+    font-weight: bold;
+}
+
+/* Footer Section */
+#footer a {
+    color: var(--color-light);
+}
+#footer a:hover {
+    color: var(--color-red);
+}
+#footer p {
+    color: var(--color-black-var)
+}
+
+/* Media Queries */
+
