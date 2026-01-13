@@ -145,6 +145,12 @@ textarea:focus-visible {
     border-color: var(--color-red);
     box-shadow: 0 0 0 0.3rem rgba(220, 53, 69, 0.2);
 }
+.modal-header {
+    border-bottom: 0;
+}
+.modal-content {
+    background: var(--color-grey);
+}
 /* Oder Confirmation */
 .email > a {
     color: var(--color-black-var);
