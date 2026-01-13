@@ -78,7 +78,7 @@ h1 {
 #hero {
     position: relative;
     min-height: 70vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("/assets/images/hero.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/assets/images/hero.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -131,6 +131,7 @@ h1 {
 /* Choose Your Package Section */
 #final-cta > .container {
     background-color: var(--color-dark-grey);
+    margin-top: 1rem;
 }
 #final-cta > .container h2 {
     color: var(--color-black-var);
@@ -191,7 +192,7 @@ textarea:focus-visible {
 /* Footer Section */
 #footer > .container {
     background: linear-gradient(180deg, #f5f5f5, #555555); 
-    margin-top: 0;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 #footer a {
@@ -206,6 +207,19 @@ textarea:focus-visible {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+
+/* Thank You Page */
+#thank-you > .row {
+    padding-top: 12rem;
+}
+#footer.thank-you {
+    margin-top: 12rem;
+}
+
+/* 404 Page */
+
+/* 500 Page */
 
 /* Media Queries */
 
