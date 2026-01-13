@@ -163,6 +163,7 @@ textarea:focus-visible {
 #footer > .container {
     background-color: var(--color-dark-grey);
     margin-top: 0;
+    margin-bottom: 1rem;
 }
 #footer a {
     color: var(--color-black-var);
