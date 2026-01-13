@@ -20,12 +20,6 @@ h1 {
     color: var(--color-black);
 }
 
-h2 {
-}
-h3 {
-
-}
-
 
 /* Sections */
 
@@ -67,6 +61,7 @@ h3 {
 /* --- Navbar Toggler: Hamburger → X --- */
 .navbar-toggler {
     background: transparent;
+    color: var(--color-light);
     border: 0;
     box-shadow: none;
     border-radius: 0;
@@ -76,6 +71,8 @@ h3 {
 .navbar-toggler-icon {
     width: 24px;
     height: 24px;
+    filter: invert(1);
+    color: var(--color-light);
 }
 .navbar-toggler[aria-expanded="true"] {
     display: none;
@@ -87,6 +84,10 @@ h3 {
 }
 
 /* Packages Section */
+#packages .row h2 {
+    margin-bottom: 0;
+    line-height: 0.5;
+}
 .card-body .card-title h2 {
     color: var(--color-black-var) !important;
 }
@@ -106,11 +107,10 @@ h3 {
     */color: var(--color-light);
     padding-left: 1rem;
 }
-
 #how-it-works >.p-text {
     padding-right: 2rem;
     padding-left: 0;
-  }
+}
 
 /* Choose Your Package Section */
 #final-cta > .container {
@@ -121,14 +121,6 @@ h3 {
 }
 
 /* Button Styles */
-.navbar-toggler {
-    border-color: var(--color-light);
-    color: var(--color-light);
-}
-.navbar-toggler-icon {
-    filter: invert(1);
-    color: var(--color-light);
-}
 .btn-outline-primary {
     background-color: var(--color-red);
     border-color: var(--color-red);
@@ -142,15 +134,41 @@ h3 {
     font-weight: bold;
 }
 
+/* Contact and Orders */
+/* Order Form & Contact Modal inputs & selects – focus styles */
+.form-control:focus,
+.form-control:focus-visible,
+.form-select:focus,
+.form-select:focus-visible,
+textarea:focus,
+textarea:focus-visible {
+    border-color: var(--color-red);
+    box-shadow: 0 0 0 0.3rem rgba(220, 53, 69, 0.2);
+}
+/* Oder Confirmation */
+.email > a {
+    color: var(--color-black-var);
+}
+.email > a:hover {
+    color: var(--color-mid-red);
+    text-decoration: none;
+}
 /* Footer Section */
+#footer > .container {
+    background-color: var(--color-dark-grey);
+    margin-top: 0;
+}
 #footer a {
-    color: var(--color-light);
+    color: var(--color-black-var);
 }
 #footer a:hover {
     color: var(--color-red);
 }
 #footer p {
-    color: var(--color-black-var)
+    color: var(--color-black-var);
+    padding-top: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Media Queries */
