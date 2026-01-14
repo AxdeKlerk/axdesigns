@@ -16,14 +16,26 @@ document.addEventListener('hidden.bs.modal', function () {
 console.log("main.js loaded");
 
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector('form');
+    const form = document.querySelector("form");
 
     if (!form || !form.action.includes("formspree.io")) return;
 
-     form.addEventListener("submit", function () {
-        setTimeout(function () {
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+
+        fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                "Accept": "application/json"
+            }
+        }).then(() => {
             window.location.href = "/thank-you.html";
-        }, 500);
+        }).catch(() => {
+            alert("There was a problem sending the form. Please try again.");
+        });
     });
 });
 
