@@ -16,11 +16,11 @@ document.addEventListener('hidden.bs.modal', function () {
 console.log("main.js loaded");
 
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector('form[action="https://formspree.io/f/xbddjqlq"]');
+    const form = document.querySelector('form');
 
-    if (!form) return;
+    if (!form || !form.action.includes("formspree.io")) return;
 
-    form.addEventListener("submit", function () {
+     form.addEventListener("submit", function () {
         setTimeout(function () {
             window.location.href = "/thank-you.html";
         }, 500);
