@@ -15,40 +15,35 @@ document.addEventListener('hidden.bs.modal', function () {
 
 console.log("main.js loaded");
 
+
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
+    const forms = document.querySelectorAll("form[action*='formspree.io']");
 
-    if (!form || !form.action.includes("formspree.io")) return;
+    forms.forEach(function (form) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
+            const formData = new FormData(form);
 
-        const formData = new FormData(form);
-
-        fetch(form.action, {
-            method: "POST",
-            body: formData,
-            headers: {
-                "Accept": "application/json"
-            }
-        }).then(() => {
-            window.location.href = "/thank-you.html";
-        }).catch(() => {
-            alert("There was a problem sending the form. Please try again.");
+            fetch(form.action, {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "Accept": "application/json"
+                }
+            }).then(() => {
+                if (form.id === "order-form") {
+                    window.location.href = "/order-confirmation.html";
+                } else {
+                    window.location.href = "/thank-you.html";
+                }
+            }).catch(() => {
+                alert("There was a problem sending the form. Please try again.");
+            });
         });
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const orderForm = document.querySelector('form[action^="mailto:"]');
 
-    if (!orderForm) return;
-
-    orderForm.addEventListener("submit", function () {
-        setTimeout(function () {
-            window.location.href = "/thank-you.html";
-        }, 500);
-    });
-});
 
 
