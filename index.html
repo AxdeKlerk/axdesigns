@@ -9,6 +9,8 @@
 
   <meta name="author" content="/*axdesigns*/" />
 
+  <link rel="canonical" href="https://axdesigns.co.uk/">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +39,7 @@
     <!-- Icon and Title -->
     <link rel="icon" type="image/png" href="/assets/images/red-logo.png?v=2">
     <title>
-        /*axdesigns*/ | Websites for Small Businesses
+        Websites for Small Businesses
     </title>
 
     <!-- Bootstrap -->
@@ -84,7 +86,7 @@
                         <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
                         <li class="nav-item"><a class="nav-link" href="#how-it-works">How it works</a></li>
                         <li class="nav-item"><a class="nav-link" href="/order.html">Order</a></li>
-                        <li><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-dismiss="collapse">Contact</a></li>
+                        <li><button type="button" class="nav-link btn btn-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</button></li>
                     </ul>
                 </div>
             </div>
@@ -102,10 +104,10 @@
                                 Straightforward websites for small businesses.
                                 No jargon, no hassle, no hidden surprises.
                             </p>
-                            <div>
-                                <a href="order.html" class="btn cta-btn-outline-primary">Get Started</a>
-                                <a href="#how-it-works" class="btn cta-btn-outline-primary">See how it works</a>
-                            </div>                             
+                        <div class="hero-cta">
+                            <a href="order.html" class="btn cta-btn-outline-primary">Get Started</a>
+                            <a href="#how-it-works" class="btn cta-btn-outline-primary">See how it works</a>
+                        </div>                             
                     </div>
                 </div>
             </div>
@@ -272,19 +274,20 @@
     </footer>
 
     <!-- Contact Modal -->
-    <div id="modal" class="modal" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel">
+    <div class="modal" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel">
     <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
         <div class="modal-content">
 
             <div class="modal-header">
                 <h5 class="modal-title" id="contactModalLabel">Get in touch</h5>
+
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
             <div class="modal-body">
                 <p class="text-muted mb-4">
                     Have a question or not sure where to start?  
-                    Send a message and we'll get back to you shortly.
+                    No pressure. Tell us about your project and we'll get back to you.
                 </p>
 
                 <form method="post" action="https://formspree.io/f/xbddjqlq">

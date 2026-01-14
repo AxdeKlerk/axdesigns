@@ -154,14 +154,24 @@ h1 {
     border-color: var(--color-red);
     color: var(--color-light);
     border: 3px solid;
-    margin-top: 5rem;
-    margin-left: 3rem;
+    margin-top: 0; /* important */
 }
 #hero .cta-btn-outline-primary:hover {
     background-color: var(--color-red);
     border-color: var(--color-red);
     color: var(--color-light);
 }
+#hero .hero-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0.75rem; /* tight, intentional spacing */
+    margin-left: 2rem;
+}
+#hero .btn {
+    width: fit-content; /* prevents full-width stretch */
+}
+
 
 /* Contact and Orders */
 /* Order Form & Contact Modal inputs & selects – focus styles */
@@ -180,6 +190,7 @@ textarea:focus-visible {
 .modal-content {
     background: var(--color-grey);
 }
+
 /* Oder Confirmation */
 .email > a {
     color: var(--color-black-var);
@@ -208,7 +219,6 @@ textarea:focus-visible {
     margin-bottom: 0;
 }
 
-
 /* Thank You Page */
 #thank-you > .row {
     padding-top: 12rem;
@@ -222,4 +232,16 @@ textarea:focus-visible {
 /* 500 Page */
 
 /* Media Queries */
+
+/* From medium to larger screens */
+@media (min-width: 768px) {
+    #hero .hero-cta {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+}
+
 
