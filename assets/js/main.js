@@ -39,4 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const orderForm = document.querySelector('form[action^="mailto:"]');
+
+    if (!orderForm) return;
+
+    orderForm.addEventListener("submit", function () {
+        setTimeout(function () {
+            window.location.href = "/thank-you.html";
+        }, 500);
+    });
+});
+
 
