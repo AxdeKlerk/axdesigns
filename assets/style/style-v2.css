@@ -124,8 +124,9 @@ h1 {
     padding-left: 1rem;
 }
 #how-it-works >.p-text {
-    padding-right: 2rem;
     padding-left: 0;
+    justify-content: center;
+
 }
 
 /* Choose Your Package Section */
@@ -227,19 +228,26 @@ textarea:focus-visible {
     margin-top: 12rem;
 }
 
-/* 404 Page */
-
-/* 500 Page */
-
 /* Media Queries */
 
-/* From medium to larger screens */
+/* Smaller Screens */
+@media (max-width 767px) {
+    #how-it-works > .p-text {
+        margin-top: 2rem;
+    }
+}
+
+/* Medium to larger screens */
 @media (min-width: 768px) {
     #hero .hero-cta {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         gap: 1rem;
+        margin-top: 2rem;
+    }
+    #how-it-works .row {
+        justify-content: between;
         margin-top: 2rem;
     }
 }
