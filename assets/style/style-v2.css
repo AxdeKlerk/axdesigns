@@ -89,15 +89,11 @@ h1 {
 }
 #hero .container {
     z-index: 1;
+    margin-left: 1rem;
 }
 #hero h1,
 #hero p {
     color: var(--color-light);
-    margin-left: 2rem;
-    
-}
-#hero p {
-    max-width: 750px;
     margin-top: 2rem;
 }
 
@@ -105,6 +101,11 @@ h1 {
 #packages .row h2 {
     margin-bottom: 0;
     line-height: 0.5;
+}
+#packages .row h5 {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    font-weight: .8rem;
 }
 .card-body .card-title h2 {
     color: var(--color-black-var) !important;
@@ -123,10 +124,13 @@ h1 {
     color: var(--color-light);
     padding-left: 1rem;
 }
-#how-it-works >.p-text {
+.process-section .container {
     padding-left: 0;
-    justify-content: center;
-
+    padding-right: 0;
+}
+.p-text {
+    padding-top: 1rem;
+    padding-left: 0;
 }
 
 /* Choose Your Package Section */
@@ -140,34 +144,61 @@ h1 {
 
 /* Button Styles */
 .btn-outline-primary {
-    background-color: var(--color-red);
+    padding-inline: 1rem;
+    background: hsla(0, 0%, 0%, 1);
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    background: -moz-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    background: -webkit-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#C00000", GradientType=1 );
+
     border-color: var(--color-red);
     color: var(--color-light);
     border: 3px solid;
+    transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
 }
 .btn-outline-primary:hover {
-    background-color: var(--color-red);
+    padding-inline: 1rem;
+    background: hsla(0, 0%, 0%, 1);
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    background: -moz-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    background: -webkit-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#C00000", GradientType=1 );
+
     border-color: var(--color-red);
-    color: var(--color-black);
+    color: var(--color-light);
+    transform: scale(1.05);
 }
 #hero .cta-btn-outline-primary {
-    background-color: var(--color-red);
+    padding-inline: 1rem;
+    background: hsla(0, 0%, 0%, 1);
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    background: -moz-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    background: -webkit-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#C00000", GradientType=1 );
+
     border-color: var(--color-red);
     color: var(--color-light);
     border: 3px solid;
     margin-top: 0; /* important */
+    transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
 }
 #hero .cta-btn-outline-primary:hover {
-    background-color: var(--color-red);
+    padding-inline: 1rem;
+    background: hsla(0, 0%, 0%, 1);
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    background: -moz-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    background: -webkit-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#C00000", GradientType=1 );
+
     border-color: var(--color-red);
     color: var(--color-light);
+    transform: scale(1.05);
 }
-#hero .hero-cta {
+.hero-cta {
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 0.75rem; /* tight, intentional spacing */
-    margin-left: 2rem;
+    margin-left: 0;
 }
 #hero .btn {
     width: fit-content; /* prevents full-width stretch */
@@ -216,8 +247,13 @@ textarea:focus-visible {
 #footer p {
     color: var(--color-black-var);
     padding-top: 1rem;
+    padding-right: 0;
+    padding-left: 1rem;
     margin-top: 0;
     margin-bottom: 0;
+}
+.copy {
+    font-size: 0.8rem;
 }
 
 /* Thank You Page */
@@ -232,20 +268,16 @@ textarea:focus-visible {
 
 /* Smaller Screens */
 @media (max-width 767px) {
-    #how-it-works > .p-text {
+    .p-text {
+        margin-top: 2rem;
+    }
+    .hero-cta {
         margin-top: 2rem;
     }
 }
 
 /* Medium to larger screens */
 @media (min-width: 768px) {
-    #hero .hero-cta {
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 2rem;
-    }
     #how-it-works .row {
         justify-content: between;
         margin-top: 2rem;
