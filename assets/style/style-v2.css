@@ -20,6 +20,9 @@ h1 {
 }
 
 /* Sections */
+section[id] {
+  scroll-margin-top: 80px;
+}
 
 /* Navbar Section */
 .navbar > .container-fluid {

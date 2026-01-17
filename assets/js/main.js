@@ -13,7 +13,20 @@ document.addEventListener('hidden.bs.modal', function () {
     // Do NOT force focus back to the navbar toggler
 });
 
-console.log("main.js loaded");
+
+// Close mobile navbar after clicking same-page anchor links
+document.querySelectorAll('#navbarNav a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function () {
+        const navbar = document.getElementById('navbarNav');
+
+        if (navbar && navbar.classList.contains('show')) {
+            const collapse = bootstrap.Collapse.getInstance(navbar);
+            if (collapse) {
+                collapse.hide();
+            }
+        }
+    });
+});
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -43,6 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+console.log("main.js loaded");
 
 
 
