@@ -307,9 +307,10 @@
                     No pressure. Tell us about your project and we'll get back to you.
                 </p>
 
-                <form method="post" action="https://formspree.io/f/xbddjqlq">
-                    <input type="hidden" name="_redirect" value="https://axdesigns.co.uk/thank-you.html">
-
+                <form method="POST" action="https://formspree.io/f/xbddjqlq">
+                    <input type="hidden" name="_next" value="https://axdesigns.co.uk/thank-you.html">
+                    <input type="text" name="_gotcha" style="display:none">
+                    
                     <!-- Name -->
                     <div class="mb-3">
                         <label for="contact-name" class="form-label">Your name</label>
