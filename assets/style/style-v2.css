@@ -103,13 +103,17 @@ section[id] {
 
 /* Packages Section */
 #packages .row h2 {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     line-height: 0.5;
 }
-#packages .row h5 {
-    margin-top: 0.5rem;
+#packages .row h3 {
+    margin-bottom: 0rem;
+    line-height: 0.5;
+}
+#packages .row p {
+    font-size: 1.2rem;
+    margin-top: 0;
     margin-bottom: 0;
-    font-weight: .8rem;
 }
 .card-body .card-title h2 {
     color: var(--color-black-var) !important;
@@ -118,6 +122,24 @@ section[id] {
     background-color: var(--color-light);
     display: flex;
     flex-direction: column;
+}
+.card-heading {
+    margin-bottom: 1.5rem;
+}
+.card-heading .price {
+    display: block;
+    font-weight: 600;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+}
+.card-subtitle {
+    margin-top: 1.5rem;
+}
+.price-from {
+    font-size: 0.65em;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-right: 0.25rem;    
 }
 
 /* How It Works Section */
@@ -208,7 +230,10 @@ section[id] {
     width: fit-content; /* prevents full-width stretch */
 }
 
-
+/* Legal stuff */
+.legal-text {
+    Margin-top: 72px;
+}
 /* Contact and Orders */
 /* Order Form & Contact Modal inputs & selects – focus styles */
 .form-control:focus,

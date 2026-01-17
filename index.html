@@ -82,9 +82,18 @@
                             data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Close menu">
                             Close</a></li>
                         <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
                         <li class="nav-item"><a class="nav-link" href="#how-it-works">How it works</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="legalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Legal Stuff
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="legalDropdown">
+                                <li><a class="dropdown-item" href="/privacy.html">Privacy</a></li>
+                                <li><a class="dropdown-item" href="/terms.html">Terms & Conditions</a></li>
+                                <li><a class="dropdown-item" href="/disclaimer.html">Disclaimer</a></li>
+                            </ul>
+                        </li>                        
                         <li class="nav-item"><a class="nav-link" href="/order.html">Order</a></li>
                         <li><button type="button" class="nav-link btn btn-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</button></li>
                     </ul>
@@ -120,17 +129,18 @@
             <div class="container">
                 <div class="row g-4 mb-3">
                     <h2 class="fw-bold">Website Packages</h2>
-                    <h3>Choose a Package. No Upsells. No Surprises.</h3>
-                    <h5>Designed for simple, effective business sites — not enterprise builds.</h5>
+                    <p>Designed for simple, effective business sites — not enterprise builds.</p>
+                    <h3>Choose your Package</h3>
                     <div class="col-12 col-md-4">
                     <article class="card h-100">
                         <div class="card-body">
                             <div>
                                 <div class="card-title">
-                                    <h3>
-                                        Starter Website<br> £249
+                                    <h3 class="card-heading">
+                                        Starter Website
+                                        <span class="price">£249</span> 
                                     </h3>
-                                    <p>For businesses that need a clean, professional online presence.</p>
+                                    <p class="card-subtitle">For businesses that need a clean, professional online presence.</p>
                                     <ul class="list-unstyled mt-3 mb-4">
                                         <li>1-3 pages</li>
                                         <li>Mobile-friendly design</li>
@@ -152,11 +162,12 @@
                     <article class="card h-100">
                         <div class="card-body">
                             <div>
-                                <div class="card-title">
+                                <div class="card-heading">
                                     <h3>
-                                        Business Website<br> £349
+                                        Business Website
+                                        <span class="price">£349</span> 
                                     </h3>
-                                    <p>For growing local businesses that need more space and clarity.</p>
+                                    <p class="card-subtitle">For growing local businesses that need more space and clarity.</p>
                                     <ul class="list-unstyled mt-3 mb-4">
                                         <li>Up to 5 pages</li>
                                         <li>Mobile-friendly layout</li>
@@ -179,11 +190,14 @@
                     <article class="card h-100">
                         <div class="card-body">
                             <div>
-                                <div class="card-title">
+                                <div class="card-heading">
                                     <h3>
-                                        Online Store<br> From £499
+                                        Online Store
+                                        <span class="price">
+                                            <span class="price-from">From</span>£499
+                                        </span>
                                     </h3>
-                                    <p>For businesses ready to sell products online.</p>
+                                    <p class="card-subtitle">For businesses ready to sell products online.</p>
                                     <ul  class="list-unstyled mt-3 mb-4">
                                         <li>Up to 10 products</li>
                                         <li>Mobile-friendly layout</li>
@@ -310,7 +324,7 @@
                 <form method="POST" action="https://formspree.io/f/xbddjqlq">
                     <input type="hidden" name="_next" value="https://axdesigns.co.uk/thank-you.html">
                     <input type="text" name="_gotcha" style="display:none">
-                    
+
                     <!-- Name -->
                     <div class="mb-3">
                         <label for="contact-name" class="form-label">Your name</label>

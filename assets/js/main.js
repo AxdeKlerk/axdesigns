@@ -2,20 +2,24 @@
 document.addEventListener('hidden.bs.modal', function () {
     const navbar = document.getElementById('navbarNav');
 
-    // Ensure navbar is fully closed
-    if (navbar && navbar.classList.contains('show')) {
-        const collapse = bootstrap.Collapse.getInstance(navbar);
-        if (collapse) {
-            collapse.hide();
+    // Do NOT close navbar when clicking a dropdown toggle
+        if (this.classList.contains('dropdown-toggle')) {
+            return;
         }
-    }
 
-    // Do NOT force focus back to the navbar toggler
-});
+        const navbar = document.getElementById('navbarNav');
+
+        if (navbar && navbar.classList.contains('show')) {
+            const collapse = bootstrap.Collapse.getInstance(navbar);
+            if (collapse) {
+                collapse.hide();
+            }
+        }
+    });
 
 
 // Close mobile navbar after clicking same-page anchor links
-document.querySelectorAll('#navbarNav a[href^="#"]').forEach(link => {
+document.querySelectorAll('#navbarNav a').forEach(link => {
     link.addEventListener('click', function () {
         const navbar = document.getElementById('navbarNav');
 
