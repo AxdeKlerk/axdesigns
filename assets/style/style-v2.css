@@ -44,6 +44,8 @@ section[id] {
     max-width: 1440px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     min-height: 56px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 /* Brand */
 .navbar-brand .brand {
