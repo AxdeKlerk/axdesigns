@@ -82,7 +82,6 @@
                             data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Close menu">
                             Close</a></li>
                         <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/index.html#packages">Packages</a></li>
                         <li class="nav-item"><a class="nav-link" href="/index.html#how-it-works">How it works</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="legalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -105,20 +104,20 @@
 
     <main class="pt-5">
         <!-- Order Form -->
-        <section id="order-form" class="container py-4 py-md-5">
+        <section class="container order-form py-4 py-md-5">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6">
 
                     <h1 class="mb-3 text-center">Start Your Order</h1>
-                    <p class="text-center text-muted mb-4">
-                        Choose a package and tell us a little about your project.
+                    <p class="text-center order-text mb-4">
+                        Complete the form and tell us a little about your project.<br>
                         Nothing is locked in at this stage.
                     </p>
 
                     <form id="order-form" method="POST" action="https://formspree.io/f/mojjvqjb">
                         <input type="text" name="_gotcha" style="display:none">
 
-                        <!-- Package -->
+                        <!-- Package
                         <div class="mb-3">
                             <label for="package" class="form-label">Package</label>
                             <select id="package" name="package" class="form-select" required>
@@ -127,7 +126,7 @@
                                 <option value="business">Business</option>
                                 <option value="online">Online</option>
                             </select>
-                        </div>
+                        </div>-->
 
                         <!-- Full name -->
                         <div class="mb-3">
@@ -156,7 +155,7 @@
                         <!-- Business / project name -->
                         <div class="mb-3">
                             <label for="project-name" class="form-label">
-                                Business or project name <span class="text-muted">(optional)</span>
+                                Business or project name (optional)
                             </label>
                             <input
                                 type="text"
@@ -169,7 +168,7 @@
                         <!-- Brief description -->
                         <div class="mb-3">
                             <label for="description" class="form-label">
-                                Brief description <span class="text-muted">(optional)</span>
+                                Brief description (optional)
                             </label>
                             <textarea
                                 id="description"
@@ -182,7 +181,7 @@
                         <!-- Timeline -->
                         <div class="mb-4">
                             <label for="timeline" class="form-label">
-                                Contact Timeline <span class="text-muted">(optional)</span>
+                                Contact Timeline (optional)
                             </label>
                             <select id="timeline" name="timeline" class="form-select">
                                 <option value="" selected>No rush / just exploring</option>
@@ -192,10 +191,10 @@
                             </select>
                         </div>
 
-                        <p class="text-muted small mt-4 text-center">
+                        <p class="order-text mt-4 text-center">
                             Nothing is locked in at this stage.<br>
-                            There will be no sales pressure from us - guaranteed.<br>
-                            <strong>This is simply your initial enquiry.</strong>
+                            There will be no sales pressure from us - guaranteed!<br>
+                            This is simply your initial enquiry.
                         </p>
 
                         <!-- Submit -->
@@ -214,11 +213,11 @@
     <footer id="footer">
         <div class="container">
             <div class="row w-100">
-                <div class="col"> 
-                    <p class="text-center">
-                        Not sure which package fits?<br>
+                <div class="col-12"> 
+                    <p class="text-center footer-p">
+                        You'd like to talk things through before ordering?<br>
                         Get in touch at <a href="mailto:hello@axdesigns.com">hello@axdesigns.com</a> 
-                        and I will reply with clear next steps — no pressure, no sales calls.
+                        and I will reply with clear next steps.
                     </p>
                     <p class="text-center copy">
                         &copy; 2025 /*axdesigns*/ All rights reserved
@@ -235,16 +234,19 @@
 
                 <div class="modal-header">
                     <h5 class="modal-title" id="contactModalLabel">Get in touch</h5>
+
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body">
-                    <p class="text-muted mb-4">
+                    <p class="mb-4">
                         Have a question or not sure where to start?  
-                        Send a message and we'll get back to you shortly.
+                        No pressure. Tell us about your project and we'll get back to you.
                     </p>
 
-                    <form method="post" action="#">
+                    <form method="POST" action="https://formspree.io/f/xbddjqlq">
+                        <input type="hidden" name="_next" value="https://axdesigns.co.uk/thank-you.html">
+                        <input type="text" name="_gotcha" style="display:none">
 
                         <!-- Name -->
                         <div class="mb-3">
@@ -273,7 +275,7 @@
                         <!-- Phone (optional) -->
                         <div class="mb-3">
                             <label for="contact-phone" class="form-label">
-                                Phone number <span class="text-muted">(optional)</span>
+                                Phone number <span>(optional)</span>
                             </label>
                             <input
                                 type="tel"
@@ -299,13 +301,15 @@
                             <button type="submit" class="btn btn-outline-primary">
                                 Send message
                             </button>
-                        </div>
+                        </div>             
 
+                    <input type="hidden" name="_subject" value="New contact form submission">
                     </form>
 
                     <!-- Response-time reassurance -->
-                    <p class="text-muted small mt-4 text-center">
-                        We aim to respond to all enquiries within <strong>24 hours</strong>.
+                    <p class="mt-4 text-center">
+                        We aim to respond to all enquiries within
+                        <strong>24 hours</strong>
                     </p>
                 </div>
             </div>

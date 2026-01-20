@@ -1,9 +1,22 @@
 
 /* Global Styles */
 body {
-    background-color: var(--color-background);
+    background-color: #0e0e0e;
+    background-image: url("/assets/images/red-smokey-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     max-width: 1200px;
     margin: 0 auto;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); /* adjust this */
+    pointer-events: none;
+    z-index: -1;
 }
 :root {
     --color-background: #8a8a8a;
@@ -16,9 +29,6 @@ body {
     --color-mid-black: #290000;
     --color-black-var: #1b1b1b;
 }
-h1 {
-    color: var(--color-black);
-}
 
 /* Sections */
 section[id] {
@@ -29,10 +39,9 @@ section[id] {
 .navbar > .container-fluid {
     padding-inline: 1rem;
     background: hsla(0, 0%, 0%, 1);
-    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
-    background: -moz-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
-    background: -webkit-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#C00000", GradientType=1 );
+    background: linear-gradient(180deg, hsla(200, 15%, 14%, 1) 0%, hsla(0, 80%, 32%, 1) 85%);
+    background: -moz-linear-gradient(180deg, hsla(200, 15%, 19%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    background: -webkit-linear-gradient(180deg, hsla(200, 15%, 19%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
 }
 .navbar {
     position: fixed;
@@ -83,8 +92,8 @@ section[id] {
 /* Hero Section */
 #hero {
     position: relative;
-    min-height: 70vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/assets/images/hero.png");
+    min-height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/assets/images/image - 5.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,6 +105,8 @@ section[id] {
 #hero .container {
     z-index: 1;
     margin-left: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 #hero h1,
 #hero p {
@@ -104,21 +115,28 @@ section[id] {
 }
 
 /* Packages Section */
+#packages .container {
+    background: hsla(0, 0%, 0%, 1);
+    background: linear-gradient(360deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 33%, 1) 120%);
+    background: -moz-linear-gradient(360deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 33%, 1) 120%);
+    color: var(--color-light);
+    padding-left: 1rem;   
+}
 #packages .row h2 {
     margin-bottom: 1rem;
     line-height: 0.5;
+    color: var(--color-light);
 }
 #packages .row h3 {
     margin-bottom: 0rem;
-    line-height: 0.5;
+    line-height: 1.5;
+    color: var(--color-light);
 }
 #packages .row p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 0;
     margin-bottom: 0;
-}
-.card-body .card-title h2 {
-    color: var(--color-black-var) !important;
+    color: var(--color-light);
 }
 .card-body {
     background-color: var(--color-light);
@@ -127,21 +145,22 @@ section[id] {
 }
 .card-heading {
     margin-bottom: 1.5rem;
-}
-.card-heading .price {
-    display: block;
-    font-weight: 600;
-    margin-top: 1.25rem;
-    margin-bottom: 1rem;
+    color: var(--color-black-var) !important;
 }
 .card-subtitle {
     margin-top: 1.5rem;
+    color: var(--color-black-var) !important;
 }
-.price-from {
-    font-size: 0.65em;
-    font-weight: 400;
-    opacity: 0.7;
-    margin-right: 0.25rem;    
+.price {
+    display: block;
+    font-weight: 800;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--color-black-var) !important;
+    font-size: 2.5rem;
+}
+.maps {
+    font-size: 0.9rem;
 }
 
 /* How It Works Section */
@@ -160,14 +179,20 @@ section[id] {
     padding-top: 1rem;
     padding-left: 0;
 }
+.what-happens {
+    padding-left: 0;
+}
 
 /* Choose Your Package Section */
-#final-cta > .container {
-    background-color: var(--color-dark-grey);
+#final-cta .container {
     margin-top: 1rem;
+    background: hsla(0, 0%, 0%, 1);
+    background: linear-gradient(180deg, hsla(0, 100%, 38%, 1) 0%, hsla(0, 0%, 0%, 1) 120%);
+    background: -moz-linear-gradient(180deg, hsla(0, 100%, 38%, 1) 0%, hsla(0, 0%, 0%, 1) 120%);
+    color: var(--color-light);
 }
-#final-cta > .container h2 {
-    color: var(--color-black-var);
+#final-cta .container h2 {
+    color: var(--color-light);
 }
 
 /* Button Styles */
@@ -177,7 +202,6 @@ section[id] {
     background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
     background: -moz-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
     background: -webkit-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#C00000", GradientType=1 );
 
     border-color: var(--color-red);
     color: var(--color-light);
@@ -202,7 +226,6 @@ section[id] {
     background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
     background: -moz-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
     background: -webkit-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#C00000", GradientType=1 );
 
     border-color: var(--color-red);
     color: var(--color-light);
@@ -216,7 +239,6 @@ section[id] {
     background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
     background: -moz-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
     background: -webkit-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#C00000", GradientType=1 );
 
     border-color: var(--color-red);
     color: var(--color-light);
@@ -235,6 +257,8 @@ section[id] {
 /* Legal stuff */
 .legal-text {
     Margin-top: 72px;
+    color: var(--color-light);
+    font-weight: 200;
 }
 /* Contact and Orders */
 /* Order Form & Contact Modal inputs & selects – focus styles */
@@ -244,14 +268,34 @@ section[id] {
 .form-select:focus-visible,
 textarea:focus,
 textarea:focus-visible {
-    border-color: var(--color-red);
-    box-shadow: 0 0 0 0.3rem rgba(220, 53, 69, 0.2);
+    color: var(--color-dark-grey);
+    box-shadow: 0 0 0 0.2rem var(--color-mid-red);
 }
 .modal-header {
     border-bottom: 0;
+    color: var(--color-light);
 }
 .modal-content {
-    background: var(--color-grey);
+    background-image: url("/assets/images/light-smokey-background.png");
+    /*background: rgba(0, 0, 0, 0.55) 50%;  adjust this */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--color-light);
+}
+.modal-body {
+    color: var(--color-light);
+    font-weight: 200;
+}
+.form-label {
+    font-weight: 350;
+}
+.order-form {
+    color: var(--color-light);
+}
+.order-text {
+    font-size: 0.9rem;
+    font-weight: 200;
 }
 
 /* Oder Confirmation */
@@ -265,40 +309,63 @@ textarea:focus-visible {
 
 /* Footer Section */
 #footer > .container {
-    background: linear-gradient(180deg, #8a8a8a, #555555); 
-    margin-top: 1rem;
+    /*background: linear-gradient(180deg, #1b1b1b, #555555);*/
+    /*background: hsla(0, 0%, 0%, 1);*/
+    /*background: -moz-linear-gradient(360deg, hsla(200, 15%, 14%, 1) 0%, hsla(0, 80%, 32%, 1) 85%);
+    background: linear-gradient(360deg, hsla(200, 15%, 14%, 1) 0%, hsla(0, 80%, 32%, 1) 85%);
+    */margin-top: 1rem;
     margin-bottom: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    background-image: url("/assets/images/grey-smokey-background.png");
+    background: rgba(0, 0, 0, 0.45); /* adjust this */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--color-light);
 }
+
 #footer a {
-    color: var(--color-black-var);
+    color: var(--color-grey);
 }
 #footer a:hover {
     color: var(--color-red);
 }
-#footer p {
-    color: var(--color-black-var);
+.footer-p {
+    color: var(--color-light);
     padding-top: 1rem;
     padding-right: 0;
     padding-left: 1rem;
     margin-top: 0;
-    margin-bottom: 0;
-}
-.copy {
+    margin-bottom: 1rem;
+    font-weight: 200;
     font-size: 0.8rem;
 }
+.copy {
+    font-size: 0.7rem;
+    font-weight: 200;
+}
 
-/* Thank You Page */
-#thank-you > .row {
+/* Thank You & Error Pages */
+#add-pages > .row {
     padding-top: 12rem;
+    color: var(--color-light);
 }
 #footer.thank-you {
     margin-top: 12rem;
 }
 
+/* Error Pages */
+
+
+
 /* Media Queries */
 
 /* Smaller Screens */
-@media (max-width 767px) {
+@media (max-width: 767px) {
+    #hero {
+        margin-top: 3rem;
+    }
     .p-text {
         margin-top: 2rem;
     }

@@ -21,7 +21,7 @@
     <!-- Icon and Title -->
     <link rel="icon" type="image/png" href="/assets/images/red-logo.png?v=2">
     <title>
-        Page Not Found | /*axdesgns*/
+        Something Has Gone Wrong | /*axdesgns*/
     </title>
 
     <!-- Bootstrap -->
@@ -66,7 +66,6 @@
                             data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Close menu">
                             Close</a></li>
                         <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/index.html#packages">Packages</a></li>
                         <li class="nav-item"><a class="nav-link" href="/index.html#how-it-works">How it works</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -80,7 +79,7 @@
                             </ul>
                         </li>                        
                         <li class="nav-item"><a class="nav-link" href="/order.html">Order</a></li>
-                        <li><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+                        <li><a href="/index.html#contactModal" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-dismiss="collapse">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -88,27 +87,25 @@
     </header>
 
     <main>
-        <div class="container">
+        <div id="add-pages" class="container">
             <div class="row">
                 <div class="col">
-
+                    <h1>Something has gone wrong!</h1>
+                    <p>Sorry for the inconvenience. I will endeavour to get it fixed as soon as possible. Please feel free to let me know.</p>
+                    <a href="/" class="btn btn-outline-primary mt-4">
+                        Back to homepage
+                    </a>
                 </div>
             </div>
         </div>
-
     </main>
 
     <!-- Footer links + micro-copy -->
-    <footer id="footer">
+    <footer id="footer" class="thank-you">
         <div class="container">
             <div class="row w-100">
                 <div class="col"> 
-                    <p class="text-center">
-                        Not sure which package fits?<br>
-                        Get in touch at <a href="mailto:hello@axdesigns.com">hello@axdesigns.com</a> 
-                        and I will reply with clear next steps — no pressure, no sales calls.
-                    </p>
-                    <p class="text-center copy">
+                    <p class="text-center align-items-center mt-1 mb-1 copy">
                         &copy; 2025 /*axdesigns*/ All rights reserved
                     </p>
                 </div>

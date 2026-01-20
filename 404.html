@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Something Went Wrong | /*axdesigns*/</title>
-
     <meta name="description"
             content="The page you were looking for isn't here. You can return to the homepage or get in touch for help.">
 
@@ -23,7 +21,7 @@
         <!-- Icon and Title -->
     <link rel="icon" type="image/png" href="/assets/images/red-logo.png?v=2">
     <title>
-        Something Went Wrong
+        Page Not found | /*axdesigns*/
     </title>
 
     <!-- Bootstrap -->
@@ -69,7 +67,6 @@
                             data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Close menu">
                             Close</a></li>
                         <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/index.html#packages">Packages</a></li>
                         <li class="nav-item"><a class="nav-link" href="/index.html#how-it-works">How it works</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" id="legalDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -83,7 +80,7 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="/order.html">Order</a></li>
-                        <li><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+                        <li><a href="/index.html#contactModal" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-dismiss="collapse">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -91,27 +88,25 @@
     </header>
 
     <main>
-        <div class="container">
+        <div id="add-pages" class="container">
             <div class="row">
                 <div class="col">
-
+                    <h1>Oops! The page you are looking for does not exist.</h1>
+                    <p>Please try again. If the problem persists, please get in contact so I can get the issue sorted.</p>
+                    <a href="/" class="btn btn-outline-primary mt-4">
+                        Back to homepage
+                    </a>
                 </div>
             </div>
         </div>
-
     </main>
 
     <!-- Footer links + micro-copy -->
-    <footer id="footer">
+    <footer id="footer" class="thank-you">
         <div class="container">
             <div class="row w-100">
                 <div class="col"> 
-                    <p class="text-center">
-                        Not sure which package fits?<br>
-                        Get in touch at <a href="mailto:hello@axdesigns.com">hello@axdesigns.com</a> 
-                        and I will reply with clear next steps — no pressure, no sales calls.
-                    </p>
-                    <p class="text-center copy">
+                    <p class="text-center align-items-center mt-1 mb-1 copy">
                         &copy; 2025 /*axdesigns*/ All rights reserved
                     </p>
                 </div>
