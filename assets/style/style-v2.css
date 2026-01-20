@@ -264,7 +264,7 @@ textarea:focus-visible {
     color: var(--color-light);
 }
 .modal-content {
-    background-image: url("/assets/images/light-smokey-background.png");
+    background-image: url("/assets/images/light-smokey-background-v2.png");
     /*background: rgba(0, 0, 0, 0.55) 50%;  adjust this */
     background-repeat: no-repeat;
     background-size: cover;
@@ -301,7 +301,7 @@ textarea:focus-visible {
     margin-bottom: 1rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
-    background-image: url("/assets/images/grey-smokey-background.png");
+    background-image: url("/assets/images/grey-smokey-background-v2.png");
     background: rgba(0, 0, 0, 0.45);
     background-repeat: no-repeat;
     background-size: cover;
@@ -309,7 +309,7 @@ textarea:focus-visible {
     color: var(--color-light);
 }
 #footer a {
-    color: var(--color-grey);
+    color: var(--color-light);
 }
 #footer a:hover {
     color: var(--color-red);
