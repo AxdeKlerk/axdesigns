@@ -97,7 +97,7 @@ main {
 #hero {
     position: relative;
     min-height: 90vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/assets/images/image - 5.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("/assets/images/fb-cover-v6.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
