@@ -147,8 +147,8 @@ main {
 /* How It Works Section */
 #how-it-works {
     background: hsla(0, 0%, 0%, 1);
-    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
-    background: -moz-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 38%, 1) 120%);
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 30%, 1) 120%);
+    background: -moz-linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 100%, 30%, 1) 120%);
     color: var(--color-light);
     padding-left: 1rem;
 }
@@ -168,8 +168,8 @@ main {
 #final-cta .container {
     margin-top: 1rem;
     background: hsla(0, 0%, 0%, 1);
-    background: linear-gradient(180deg, hsla(0, 100%, 38%, 1) 0%, hsla(0, 0%, 0%, 1) 120%);
-    background: -moz-linear-gradient(180deg, hsla(0, 100%, 38%, 1) 0%, hsla(0, 0%, 0%, 1) 120%);
+    background: linear-gradient(180deg, hsla(0, 100%, 30%, 1) 0%, hsla(0, 0%, 0%, 1) 120%);
+    background: -moz-linear-gradient(180deg, hsla(0, 100%, 30%, 1) 0%, hsla(0, 0%, 0%, 1) 120%);
     color: var(--color-light);
 }
 #final-cta .container h2 {
