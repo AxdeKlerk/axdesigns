@@ -254,10 +254,15 @@ section[id] {
 }
 
 /* Legal stuff */
-.legal-text {
+.legal-text h2 {
     Margin-top: 72px;
     color: var(--color-light);
     font-weight: 200;
+    align-items: center;
+}
+.legal-text h3, h5, ul, p {
+    color: var(--color-light);
+    font-weight: 200;    
 }
 /* Contact and Orders */
 /* Order Form & Contact Modal inputs & selects – focus styles */
