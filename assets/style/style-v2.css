@@ -258,7 +258,6 @@ section[id] {
     Margin-top: 72px;
     color: var(--color-light);
     font-weight: 200;
-    align-items: center;
 }
 .legal-text h3, h5, ul, p {
     color: var(--color-light);
