@@ -32,7 +32,7 @@ body::before {
 
 /* Sections */
 section[id] {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 70px;
 }
 
 /* Navbar Section */
@@ -99,7 +99,7 @@ section[id] {
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
 }
 #hero .container {
@@ -111,28 +111,27 @@ section[id] {
 #hero h1,
 #hero p {
     color: var(--color-light);
-    margin-top: 2rem;
 }
 
-/* Packages Section */
-#packages .container {
+/* Build Section */
+#build .container {
     background: hsla(0, 0%, 0%, 1);
     background: linear-gradient(360deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 33%, 1) 120%);
     background: -moz-linear-gradient(360deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 33%, 1) 120%);
     color: var(--color-light);
     padding-left: 1rem;   
 }
-#packages .row h2 {
+#build .row h2 {
     margin-bottom: 1rem;
     line-height: 0.5;
     color: var(--color-light);
 }
-#packages .row h3 {
+#build .row h3 {
     margin-bottom: 0rem;
     line-height: 1.5;
     color: var(--color-light);
 }
-#packages .row p {
+#build .row p {
     font-size: 1rem;
     margin-top: 0;
     margin-bottom: 0;
@@ -363,9 +362,6 @@ textarea:focus-visible {
 
 /* Smaller Screens */
 @media (max-width: 767px) {
-    #hero {
-        margin-top: 3rem;
-    }
     .p-text {
         margin-top: 2rem;
     }
