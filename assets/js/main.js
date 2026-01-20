@@ -26,7 +26,6 @@ document.querySelectorAll('#navbarNav a').forEach(link => {
 });
 
 
-console.log("main.js loaded");
 
 
 
