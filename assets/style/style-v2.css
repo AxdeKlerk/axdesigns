@@ -240,7 +240,8 @@ main {
     color: var(--color-light);
     font-weight: 200;
 }
-.legal-text h3, 
+.legal-text h3,
+.legal-text h4, 
 .legal-text h5, 
 .legal-text ul, 
 .legal-text p {
