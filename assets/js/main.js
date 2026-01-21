@@ -1,3 +1,6 @@
+console.log('Formspree interceptor loaded');
+
+
 // Close mobile navbar after clicking same-page anchor and drop-down item links links
 document.querySelectorAll('#navbarNav a').forEach(link => {
     link.addEventListener('click', function () {
@@ -25,8 +28,31 @@ document.querySelectorAll('#navbarNav a').forEach(link => {
     });
 });
 
+document.addEventListener('submit', async event => {
+    const form = event.target.closest('form');
 
+    if (!form || !form.hasAttribute('data-formspree')) return;
 
+    event.preventDefault();
 
+    try {
+        const response = await fetch(form.action, {
+            method: form.method || 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            window.location.href = '/thank-you.html';
+        } else {
+            alert('Something went wrong. Please try again.');
+        }
+    } catch (error) {
+        console.error('Form submission failed:', error);
+        alert('Network error. Please try again.');
+    }
+});
 
 
